@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Contact Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Site CSS-->
+        <link rel="stylesheet"  href="css/style.css">
+
+        <!--Bootstrap Linking-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!--Javascript-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="scripts/contact.js"></script>
+
+        <!--Font Awesome Icons-->
+        <script src="https://kit.fontawesome.com/45454c867c.js"></script>
+        
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+
+        <div class="home" style="background-image: url(images/Backgrounds/bg2.jpg);" id="home">
+
+            <!--Navigation Bar-->
+            
+            <div class="navbar left_nav navbar-expand-md navbar-dark fixed-top">
+                
+                <!--CollapseButton Ends-->
+    
+                <!--NavbarBrand-->
+    
+                <a class="navbar-brand  mx-auto" href="index.html">CAM<span>ONLINE</span></a>
+    
+                <!--NavbarBrand Ends-->
+
+            </div>
+    
+            <!--Navigation Bar Ends-->
+    
+            <!--Contact Section-->
+
+            <div class="contact_sec d-flex" style="background-image: url(images/Backgrounds/bg1.jpg);">
+                <form class="m-3" method="POST" action="php/contact.php" onsubmit="return contactvalidate();">
+                    <div class="form-group">
+                        <input type="text" class="control_text" placeholder="Name" name="contact_name" id="contact_name"> 
+                        <label style="color: red;visibility: hidden;" id="contact_label1">Name is Required</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="control_text" placeholder="Email" name="contact_email" id="contact_email">
+                        <label style="color: red;visibility: hidden;" id="contact_label2">Invalid Email</label>
+                    </div>
+                    <textarea class="control_text" placeholder="Comment" name="contact_comment" id="contact_comment"></textarea>
+                    <div class="form-group">
+                        <button type="submit" class="btn-success" style="margin-top: 10px;">SUBMIT</button>
+                    </div>
+                    <div class="form-group">       
+                        <center>
+                            <a href="https://www.facebook.com/CamOnline-105943071393777" ><img src="images/Logos/fblogo.png" style="height: 50px;width: 50px;border-radius: 50%;"></a>
+                            <a href="https://www.instagram.com/cam._online/" ><img src="images/Logos/instalogo.png"  style="height: 50px;width: 50px;border-radius: 50%;"></a>
+                            <a href="https://mail.google.com/mail/u/0/#compose" ><img src="images/Logos/maillogo.png" style="height: 50px;width: 50px;border-radius: 50%;"></a>
+                        </center>
+                    </div>
+                </form>
+            </div>
+
+            <!--Contact Section Ends-->
+        </div>
+
+    </body>
+</html>

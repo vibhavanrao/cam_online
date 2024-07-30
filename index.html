@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!--Site CSS-->
+        <link rel="stylesheet"  href="css/style.css">
+
+        <!--Bootstrap Linking-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!--Javascript-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/alert.js"></script>
+
+        <!--Font Awesome Icons-->
+        <script src="https://kit.fontawesome.com/45454c867c.js"></script>
+        
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        
+    </head>
+    
+    <body data-spy="scroll" data-target=".navbar" data-offset="50" onload="alertFunc();">
+        <!--Welcome Part-->
+        <div class="home" style="background-image: url(images/Backgrounds/bg2.jpg);" id="home">
+
+        <!--Navigation Bar-->
+        
+        <div class="navbar left_nav navbar-expand-sm navbar-dark fixed-top">
+        
+            <!--CollapseButton-->
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse" type="button">
+				<i class="fas fa-bars"></i>
+            </button>
+            
+            <!--CollapseButton Ends-->
+
+            <!--NavbarBrand-->
+
+            <a class="navbar-brand  mx-auto" href="index.html">CAM<span>ONLINE</span></a>
+
+            <!--NavbarBrand Ends-->
+
+            <!--Navigation Links-->
+
+            <div class="collapse navbar-collapse" id="navbarcollapse">
+				<div class="navbar-nav p-2 m-2 ml-auto">
+                    <div class="nav-item">
+					    <a class="nav-link" href="#home" style="color:white;">HOME</a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link" href="#register_sec" style="color:white;">REGISTER</a>
+                    </div>
+					<div class="nav-item">
+						<a class="nav-link" href="#about" style="color:white;">ABOUT US</a>
+                    </div>
+					<div class="nav-item">
+						<a class="nav-link" href="contact.html" style="color:white;">CONTACT US</a>
+                    </div>
+				</div>
+            </div>
+            
+             <!--Navigation Links Ends-->
+
+          </div>
+
+        <!--Navigation Bar Ends-->
+
+        <!--Welcome Message-->
+
+            <div class="home_btm">
+                <h3>
+                    <strong>WELCOME TO CAM<span>ONLINE</span></strong>
+                </h3> 
+            </div>
+
+        <!--Welcome Ends here-->
+        
+        </div> 
+
+        <!--Welcome Part Ends-->
+
+        <!--Register Section-->
+
+        <div class="register_sec d-flex" style="background-image: url(images/Backgrounds/bg4.jpg);" id="register_sec">
+            <form class="m-3" method="POST" onsubmit="return formvalidate();" action="php/connection.php">
+                <div class="form-group">
+                    <input type="text" class="control_text" placeholder="Name" id="name" name="name">
+                    <label style="color: red;visibility: hidden;" id="label1">Name is Required</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="control_text" placeholder="Email" id="email1" name="email">
+                    <label style="color: red;visibility: hidden;" id="label2">Invalid Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="control_text" placeholder="Create Password" id="pass" name="password">
+                    <label style="color:red;visibility: hidden;" id="label3">Invalid</label>
+                </div> 
+                <div class="form-group">
+                    <input type="password" class="control_text" placeholder="Confirm Password" id="confirm_pass" name="conpass">
+                    <label style="color:red;visibility: hidden;" id="label4">Not Matched</label>
+                </div> 
+                <button class="btn-success" type="submit">SIGN UP</button>
+                <button class="btn-warning" type="reset">RESET</button>
+                <p>Already Registered ?</p><a href="login.html">SignIn >></a>
+            </form>
+        </div>
+
+        <!--Register Section Ends-->
+
+        <!--About Us Section-->
+
+        <div class="about_sec" style="background-image: url(images/Backgrounds/bg5.jpg);" id="about">
+            <p>
+                CAMONLINE Welcomes you! Basically,this website is very useful to you to search and shop for best cameras and cam-accessories for you.We have picked up the best ones of different Brands at different price segments.You can buy your item with our integrated payment system which is very safe and trusted by alot Customers.
+                We the team of CAMONLINE help you with your problems or issues.You can leave your valuable suggestions and advices at our contact page.
+            </p>
+        </div>
+
+        <!--About Us Section Ends-->
+        
+    </body>
+</html> 

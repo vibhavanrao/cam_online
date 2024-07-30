@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Address Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Site CSS-->
+        <link rel="stylesheet"  href="css/style.css">
+
+        <!--Bootstrap Linking-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!--Javascript-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="scripts/address.js"></script>
+
+        <!--Font Awesome Icons-->
+        <script src="https://kit.fontawesome.com/45454c867c.js"></script>
+        
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        
+        <!--Address Section-->
+
+        <div class="address_sec d-flex" style="background-image: url(images/Backgrounds/bg5.jpg);">
+            <form class="m-3" method="POST" onsubmit="return addressvalidate(); " action="php/address.php"> 
+                <div class="form-group">
+                    <input type="text" class="control_text" placeholder="Name" id="aname" name="aname">
+                    <label style="color: red;visibility: hidden;" id="add_label1">Name is Required</label>
+                </div>
+                <div class="form-group">
+                     <input type="text" class="control_text" placeholder="Email" id="aemail" name="aemail">
+                     <label style="color: red;visibility: hidden;" id="add_label2">Invalid</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="control_text" placeholder="Street Name" id="sname" name="sname">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="control_text" placeholder="Town/City" id="city" name="city">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="control_text" placeholder="Phone Number" id="pno" name="pno">
+                    <label style="color: red;visibility: hidden;" id="add_label3">Invalid</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="control_text" placeholder="Pincode" id="pin" name="pin">
+                    <label style="color: red;visibility: hidden;" id="add_label4">Invalid</label>
+                </div>
+                <button type="submit" class="btn-success"  style="margin-top: 10px;">Save and Shop</button>
+            </form>
+        </div>
+
+        <!--Address Section Ends-->
+
+    </body>
+</html>
